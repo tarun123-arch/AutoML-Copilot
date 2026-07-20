@@ -1,78 +1,172 @@
 # 🤖 AutoML Copilot
 
-An end-to-end automated Machine Learning pipeline built using Python and Scikit-learn that automatically preprocesses datasets, trains multiple machine learning models, evaluates them, and selects the best-performing model for both classification and regression tasks.
+An end-to-end automated Machine Learning pipeline capable of preprocessing, feature engineering, model training, evaluation, and automatic best model selection for both classification and regression problems.
+
+Instead of manually writing preprocessing code for every dataset, the pipeline automatically performs all required steps and returns the highest-performing machine learning model.
 
 ---
 
-## 🚀 Features
+# Why this project?
 
-- Automatic dataset loading
-- Automatic target column selection
-- Automatic task detection (Classification / Regression)
-- Missing value handling
-- Categorical feature encoding
-- Feature scaling
-- Multiple ML model training
-- Best model selection
-- Performance evaluation
+Machine learning projects usually require repetitive preprocessing before model training.
 
----
+This project automates the complete workflow so users only need to:
 
-## 🛠️ Tech Stack
+• Provide a CSV dataset
+• Select the target column
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
+Everything else is handled automatically.
 
 ---
 
-## 📂 Project Structure
+# Features
 
-```text
-AutoML-Copilot/
-├── AutoML_Copilot.ipynb
-├── README.md
-├── requirements.txt
-├── LICENSE
-├── .gitignore
-└── datasets/
-```
+## 📂 Dataset Processing
 
----
+✔ Load any CSV dataset
 
-## 📈 Workflow
+✔ Display dataset information
 
-1. Load Dataset
-2. Select Target Column
-3. Data Cleaning
-4. Missing Value Handling
-5. Encoding
-6. Feature Scaling
-7. Train Multiple Models
-8. Compare Performance
-9. Select Best Model
+✔ Automatic target column selection
+
+✔ Automatic feature/target separation
 
 ---
 
-## 🎯 Supported Tasks
+## 📊 Automatic Exploratory Data Analysis
+
+✔ Dataset shape
+
+✔ Missing value analysis
+
+✔ Data type inspection
+
+✔ Statistical summary
+
+✔ Duplicate detection
+
+---
+
+## 🧹 Data Preprocessing
+
+✔ Missing value handling
+
+✔ One-Hot Encoding
+
+✔ Numerical feature scaling
+
+✔ Automatic preprocessing pipeline
+
+---
+
+## 🧠 Intelligent Task Detection
+
+The pipeline automatically detects whether the selected target belongs to
 
 - Classification
 - Regression
 
----
-
-## 📌 Future Improvements
-
-- FastAPI Backend
-- React Dashboard
-- Model Download
-- Explainable AI
-- Cloud Deployment
+No manual configuration required.
 
 ---
 
-## 📜 License
+## 🤖 Machine Learning Models
 
-MIT License
+Depending on the task, multiple algorithms are trained.
+
+Examples include:
+
+Classification
+
+• Logistic Regression
+
+• Decision Tree
+
+• Random Forest
+
+• KNN
+
+• SVM
+
+Regression
+
+• Linear Regression
+
+• Decision Tree Regressor
+
+• Random Forest Regressor
+
+---
+
+## 📈 Model Evaluation
+
+Every trained model is evaluated.
+
+The pipeline compares all scores and automatically selects the highest-performing model.
+
+Returned information includes:
+
+• Best Model
+
+• Accuracy / R² Score
+
+• Model Comparison
+
+---
+
+# Workflow
+
+Dataset
+↓
+
+EDA
+↓
+
+Missing Value Handling
+↓
+
+Encoding
+↓
+
+Scaling
+↓
+
+Model Training
+↓
+
+Evaluation
+↓
+
+Best Model Selection
+
+---
+
+# Technologies
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Matplotlib
+
+Jupyter Notebook
+
+---
+
+# Future Improvements
+
+FastAPI Backend
+
+React Dashboard
+
+Model Download
+
+Auto Prediction API
+
+Docker Deployment
+
+Cloud Hosting
